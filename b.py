@@ -5,6 +5,7 @@ import plotly.express as px
 import pandas as pd 
 
 app = dash.Dash(__name__)
+sarver = app.sarver
 
 
 data = {
@@ -45,4 +46,5 @@ def update_graph(graph_type):
         fig = px.scatter(df, x = 'area', y='cost')
     return fig
 
-app.run(debug=True)
+
+app.run(debug=True, port=8050, host='0.0.0.0')
