@@ -5,7 +5,7 @@ import plotly.express as px
 import pandas as pd 
 
 app = dash.Dash(__name__)
-sarver = app.sarver
+sarver = app.server
 
 
 data = {
